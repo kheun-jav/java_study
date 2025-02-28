@@ -1,0 +1,14 @@
+package ex6_sort;
+
+import java.util.Arrays;
+
+public class SortedEx2 {
+	public static void main(String[] args) {
+		List<Student> list =Arrays.asList(
+				new Student("홍길동", 1, 89, 56, 66),
+				new Student("김삿갓", 1, 85, 56, 80)
+				new Student("이몽룡", 2, 90, 78, 95)
+				new Student("임꺽정", 3, 60, 56, 88))
+	}
+
+}

@@ -1,0 +1,10 @@
+package ex2_supplier;
+
+public class SupplierEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

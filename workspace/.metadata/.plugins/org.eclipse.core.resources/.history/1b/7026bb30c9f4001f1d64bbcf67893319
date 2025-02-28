@@ -1,0 +1,10 @@
+package ex7_peek;
+/*
+ * 1~100사이의 임의의 수 10개를 Stream으로 생성하여, 홀수요소와 홀수의 합을 출력하기
+ */
+public class Exam1 {
+	public static void main(String[] args) {
+
+	}
+
+}

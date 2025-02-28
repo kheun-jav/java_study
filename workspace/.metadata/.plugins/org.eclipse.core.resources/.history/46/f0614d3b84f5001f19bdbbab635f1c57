@@ -1,0 +1,8 @@
+package ex11_group;
+
+public class Ex02_Group {
+
+	public static void main(String[] args) throws IOException{
+	}
+
+}

@@ -1,0 +1,18 @@
+package ex10_collect;
+//reducing() 함수 
+
+import chap16.Student;
+
+public class Ex03_collect {
+	public static void main(String[] args) {
+		Student stuArr [] = {
+				new Student("이자바", 3, 34, 55, 80),
+				new Student("김자바", 1, 60, 45, 90),
+				new Student("안자바", 2, 80, 95, 60),
+				new Student("박자바", 2, 75, 85, 70),
+				new Student("소자바", 1, 65, 65, 90),
+				new Student("나자바", 3, 60, 85, 50),
+				new Student("감자바", 3, 40, 75, 60)};
+	}
+
+}

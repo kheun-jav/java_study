@@ -1,0 +1,22 @@
+package ex7_peek;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+/*
+ * 1~100사이의 임의의 수 10개를 Stream으로 생성하여, 홀수요소와 홀수의 합을 출력하기
+ */
+public class Exam1 {
+	public static void main(String[] args) {
+		int rnum = (int)(Math.random()*100+1);
+		int arr[] = new int[10];
+		for(int i= 0; i<10; i++) {
+			arr[i]=rnum;
+			rnum = (int)(Math.random()*100+1)
+		}
+		Arrays.stream(arr).filter(n ->n%2==1)
+		.forEach(System.out::println);
+
+	}
+
+}

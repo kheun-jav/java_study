@@ -1,0 +1,13 @@
+package ex3_filter;
+
+import java.util.Arrays;
+
+/*
+ * filter 함수 이용
+ */
+public class FilterStreamEx1 {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("홍길동","김삿갓","홍길동","임꺽정","홍길동");
+	}
+
+}

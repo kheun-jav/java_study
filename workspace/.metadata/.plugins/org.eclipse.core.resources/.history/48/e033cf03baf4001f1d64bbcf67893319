@@ -1,0 +1,11 @@
+package ex6_sort;
+/*
+ * SortedEx3.java 소스의 내용을 반별, 총점순으로 정렬하기
+ */
+public class Exam1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

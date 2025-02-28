@@ -1,0 +1,38 @@
+package ex5_other;
+/*
+ * 스레드 정리
+ * 1. 스레드 생성
+ * 	(1)Thread 클래스 상속, run 메서드 오버라이딩하기
+ * 	(2)Runnable 인터페이스 구현, run 메서드 오버라이딩하기. Thread 객체에 주입
+ * 2. 스레드 상태
+ * 	 Thread 생성 상태 : new Thread()
+ * 	 Runnable 상태 : start() 메서드 실행.
+ *   Running 상태 : start()에 의하여 run()메서드를 실행 중인 상태
+ *   대기 상태 : sleep(), 동기화 lock 획득실패, wait(). 대기상태 해제시 Runnable 상태로 변경
+ *   Dead 상태: run() 메서드 종료
+ * 3. 주요메서드
+ * 	  (1) start() : 병렬화 기능.run 메서드 호출. new 상태 => Runnable 상태
+ * 	  (2) run()   : 스레드의 기능. 스레드가 실행하는 메서드.
+ *	  (3) sleep(밀리초) : 일정 시간(밀리초)만큼 대기상태
+ *	  (4) setDaemon(boolean) : true인 경우 데몬 스레드로 생성. new 상태에서만 설정 	 
+ */
+class InterruptThread extends Thread{
+	public void run() {
+		System.out.println("자고있습니다. 깨우지 마세요");
+		try {
+			sleep(100000000); //10000초 대기
+		} catch(InterruptedException e) {
+			System.out.println("누가 깨우지?");
+			e.printStackTrace();
+		}
+	}
+}
+public class InterruptEx1 {
+	public static void main(String[] args) throws InterruptedException {
+		InterruptThread t1 = new InterruptThread();
+		t1.start();
+		Thread.sleep(2000); //2초 대기
+		t1.interrupt(); //t1 스레드에 InterruptedException 발생
+	}
+
+}

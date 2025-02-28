@@ -1,0 +1,19 @@
+package ex8_parallel;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class SequencialVsParallelEx1 {
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(0,1,2,3,4,5,6,7,8,9);
+		long start = System.nanoTime();
+		list.stream().forEach((a)->System.out.print(a+","));
+		long end = System.nanoTime();
+		System.out.println("순차처리 시간: "+(end-start));
+		start = System.nanoTime();
+		list.parallelStream().forEach((a) -> System.out.println(a+","));
+		end = System.nanoTime();
+		System.out.println("병렬처리 시간: "+(end-start));
+	}
+
+}

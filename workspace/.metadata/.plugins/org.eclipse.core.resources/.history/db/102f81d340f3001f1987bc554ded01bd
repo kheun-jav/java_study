@@ -1,0 +1,11 @@
+package ex5_other;
+class InterruptThread extends Thread{
+	public void run() {
+		System.out.println("자고있습니다. 깨우지 마세요");
+	}
+}
+public class InterruptEx1 {
+	public static void main(String[] args) {
+	}
+
+}

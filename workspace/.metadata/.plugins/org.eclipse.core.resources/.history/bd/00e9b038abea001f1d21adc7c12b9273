@@ -1,0 +1,10 @@
+package test;
+
+public class AD {
+	public static void main(String[] args) {
+		String a = "gg";
+		int int1 = Integer.parseInt(a);
+		System.out.println(int1);
+	}
+
+}

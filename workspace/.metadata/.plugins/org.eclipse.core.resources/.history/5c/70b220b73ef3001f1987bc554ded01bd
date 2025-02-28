@@ -1,0 +1,10 @@
+package ex5_other;
+/*
+ * Thread 우선순위
+ * Runnable 상태에서 Running 상태 변경시 스케줄러가 관여함. 개발자의 영역이 아님
+ */
+public class PriorityEx1 {
+	public static void main(String[] args) {
+	}
+
+}

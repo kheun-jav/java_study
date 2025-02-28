@@ -1,0 +1,5 @@
+package ex3_file;
+
+public class FileInputStream {
+
+}

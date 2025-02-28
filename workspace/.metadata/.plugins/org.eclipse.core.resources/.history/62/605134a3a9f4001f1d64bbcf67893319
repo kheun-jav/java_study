@@ -1,0 +1,9 @@
+package ex5_flatmap;
+/*
+ * flatMapInt() :
+ */
+public class FlatMapEx2 {
+	public static void main(String[] args) {
+	}
+
+}

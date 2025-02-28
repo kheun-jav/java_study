@@ -1,0 +1,13 @@
+package ex5_flatmap;
+
+import java.util.Arrays;
+
+/*
+ * 
+ */
+public class FlatMapEx1 {
+	public static void main(String[] args) {
+		List<String> list1 =Arrays.asList("자바 8 버전에 ","추가된 스트림을", "열심히 공부하자" )
+	}
+
+}

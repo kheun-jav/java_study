@@ -1,0 +1,13 @@
+package ex4_map;
+
+import java.util.Arrays;
+
+/*
+ * map : 스트림의 요소를 다른요소로 변경 할 수 있는 함수
+ */
+public class MapEx1 {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("홍길동전","김삿갓","구운몽","전우치전","사씨남정기");
+	}
+
+}

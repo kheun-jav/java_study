@@ -1,0 +1,28 @@
+package ex8_parallel;
+
+import java.util.function.Function;
+
+import chap16.Address;
+import chap16.Member;
+
+public class FunctionAndThenComposeEx1 {
+
+	public static void main(String[] args) {
+		Function<Member, Address> functionA;
+		Function<Address, String> functionB;
+		Function<Member, String> functionAB;
+		String city;
+		functionA = m -> m.getAddress();
+		functionB = a ->a.getCity();
+		functionAB = functionA.andThen(functionB);
+		city = functionAB.apply(
+				new Member("홍길동", "hong", new Address("한국", "서울")));
+		System.out.println("andThen-->거주 도시:"+city);
+		System.out.println();
+		functionAB = functionB.compose(functionA);
+		city = functionAB.apply(
+				new Member("홍길동", "hong", new Address("한국", "서울")));
+		System.out.println("compose-->거주 도시:"+city);
+	}
+
+}

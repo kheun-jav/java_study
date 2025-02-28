@@ -1,0 +1,23 @@
+package ex3_function;
+class Student{
+	private String name;
+	private int eng;
+	private int math;
+	private String major;
+	public Student(String name, int eng, int math, String major) {
+		this.name = name;
+		this.eng = eng;
+		this.math = math;
+		this.major = major;
+	}
+	//getter : 멤버변수의 값을 리턴 String getName() name Get프로퍼티(property)
+	//setter : 멤버변수의 값을 저장 void setName(String name) => name 프로퍼티
+	public String getName() {
+		return name;
+	}
+}
+public class FunctionEx1 {
+	public static void main(String[] args) {
+	}
+
+}

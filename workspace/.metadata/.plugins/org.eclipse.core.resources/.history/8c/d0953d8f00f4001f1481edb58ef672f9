@@ -1,0 +1,21 @@
+package ex2_array;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+/*
+ * 배열 객체를 이용하여 Stream 생성하기
+ */
+public class ArraysEx1 {
+	public static void main(String[] args) {
+		String arr[] = new String[] {"a","b","c"};
+		Stream<String> stream1 = Arrays.stream(arr);
+		stream1.forEach(s -> System.out.println(s+"\t"));
+		System.out.println();
+		Stream<String> stream2 = Arrays.stream(arr, 1, 3);
+		stream2.forEach(s -> System.out.println(s+"\t"));
+		
+
+	}
+
+}

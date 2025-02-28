@@ -1,0 +1,12 @@
+package ex2_supplier;
+/*
+ * Supplier 관련 인터페이스
+ * 
+ */
+public class SupplierEx1 {
+	public static void main(String[] args) {
+	
+	
+	
+	}
+}

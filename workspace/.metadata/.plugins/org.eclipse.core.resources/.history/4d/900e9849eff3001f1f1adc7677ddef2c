@@ -1,0 +1,10 @@
+package ex5_predicate;
+/*
+ * Predicate 인터페이스
+ * 	boolean test(T) : 매개변수 존재, 리턴타입은 boolean
+ */
+public class PredicateEx1 {
+	public static void main(String[] args) {
+	}
+
+}

@@ -1,0 +1,10 @@
+package ex5_other;
+/*
+ * 멀티 프로세스 예제
+ */
+public class ProcessEx1 {
+	public static void main(String[] args) {
+		Process p1 = new Runtime.getRuntime().exec("mspaint.exe");
+		}
+
+}

@@ -1,0 +1,9 @@
+package ex5_predicate;
+/*
+ * Predicate 인터페이스
+ */
+public class PredicateEx1 {
+	public static void main(String[] args) {
+	}
+
+}

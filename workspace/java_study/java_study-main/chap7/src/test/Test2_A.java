@@ -1,0 +1,72 @@
+package test;
+/*
+2. Coin 클래스 구현하기
+  Coin 클래스
+   멤버변수 : int side (앞면:0, 뒷면:1), serialNo(동전번호), 
+            sno(동전번호 생성을위한 클래스변수)
+   생성자 : 구동 클래스에 맞도록 구현         
+   멤버메서드 : void flip()
+                Math.random() 메서드를 사용하여 side를 결정.
+
+
+  [결과]
+Coin 객체 생성 :1번 동전 : 앞면
+flip() 실행 후 :1번 동전 : 뒷면
+Coin 객체 생성 :2번 동전 : 뒷면
+flip() 실행 후 :2번 동전 : 앞면
+Coin 객체 생성 :3번 동전 : 뒷면
+flip() 실행 후 :3번 동전 : 뒷면
+Coin 객체 생성 :4번 동전 : 뒷면
+flip() 실행 후 :4번 동전 : 앞면
+Coin 객체 생성 :5번 동전 : 앞면
+flip() 실행 후 :5번 동전 : 뒷면
+Coin 객체 생성 :6번 동전 : 뒷면
+flip() 실행 후 :6번 동전 : 앞면
+Coin 객체 생성 :7번 동전 : 앞면
+flip() 실행 후 :7번 동전 : 뒷면
+Coin 객체 생성 :8번 동전 : 뒷면
+flip() 실행 후 :8번 동전 : 뒷면
+Coin 객체 생성 :9번 동전 : 뒷면
+flip() 실행 후 :9번 동전 : 앞면
+Coin 객체 생성 :10번 동전 : 뒷면
+flip() 실행 후 :10번 동전 : 뒷면
+생성 후 앞면 동전의 갯수 :3
+생성 후 뒷면 동전의 갯수 :7
+flip 후 앞면 동전의 갯수 :4
+flip 후 뒷면 동전의 갯수 :6
+ */
+class Coin {
+	int side;
+	Coin(int side) {  //생성자
+		this.side = side;
+	}
+	void flip() {
+		side = (int)(Math.random() * 2);
+	}
+	public String toString() {
+		return (side==0)?"앞면":"뒷면";
+	}
+}
+
+public class Test2_A {
+	public static void main(String[] args) {
+		Coin[] coinarr = new Coin[10]; //Coin 객체 참조할 참조변수 10개의 배열
+		int[] cnt1 = new int[2];  //최초 객체 생성시 앞면(0)/뒷면(1)의 동전의 갯수
+		int[] cnt2 = new int[2];  //flip 함수 이후의 앞면(0)/뒷면(1)의 동전의 갯수
+		for(int i=0;i<coinarr.length;i++) {
+			int side = (int)(Math.random() * 2); //0,1 중 한개의 값 선택
+			coinarr[i] = new Coin(side); //Coin 객체화 
+			//coinarr[i] : Coin 객체의 참조변수. 
+			//coinarr[i].toString() 메서드가 호출됨
+			System.out.println("Coin 객체 생성 :" + coinarr[i]);
+			cnt1[coinarr[i].side]++; //앞면 또는 뒷면의 갯수 계산
+			coinarr[i].flip(); //동전의 면을 변경.
+			System.out.println("flip() 실행 후 :" + coinarr[i]);
+			cnt2[coinarr[i].side]++; //flip() 함수 이후에 앞면/뒷면의 동전의 갯수 출력
+		}
+		System.out.println("생성 후 앞면 동전의 갯수 :" + cnt1[0]);
+		System.out.println("생성 후 뒷면 동전의 갯수 :" + cnt1[1]);	
+		System.out.println("flip 후 앞면 동전의 갯수 :" + cnt2[0]);
+		System.out.println("flip 후 뒷면 동전의 갯수 :" + cnt2[1]);	
+	}
+}

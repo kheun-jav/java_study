@@ -1,0 +1,17 @@
+package ex7_peek;
+
+import java.util.Arrays;
+
+public class PeekvsForEachEx1 {
+	public static void main(String[] args) {
+		int intArr[] = {1,2,3,4,5};
+		System.out.println("peek 메서드 연습");
+		Arrays.stream(intArr).filter(a ->a%2==0)
+		.peek(n ->System.out.print(n+",")).sum();
+		System.out.println();
+		System.out.println("ForEach 메서드 연습");
+		Arrays.stream(intArr).filter(a->a%2==0)
+		.forEach(n -> System.out.print(n+","));
+	}
+
+}

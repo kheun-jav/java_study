@@ -1,0 +1,29 @@
+package ex3_file;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+/*
+ * FileInputStream : 파일내용 읽어 화면에출력
+ * 
+ * 주요메서드
+ * int read() : 1바이트읽어서 내용을 리턴
+ * int read(byte[] buf) : buf의 크기만큼 읽어서 내용을 buf에 저장.읽은 바이트 수를 리턴해줌
+ * int read(byte[] buf,int start, int len) :
+ *     len의크기만큼읽어서 buf의 start인덱스 부터  내용을 buf에 저장.읽은 바이트 수를 리턴해줌
+ *    
+ * int available() : 읽기 가능 바이트 수 return 
+ */
+public class FileInputStreamEx1 {
+	public static void main(String[] args) throws IOException {
+		FileInputStream fis = new FileInputStream("src/ex1_inputStream/inputStreamEx1.java");
+		int data = 0;
+		System.out.println("======= read() 메서드를 이용해 읽기");
+		while((data=fis.read()) != -1) {
+			System.out.println((char)data);
+		}
+		
+	}
+
+}

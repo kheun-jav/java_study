@@ -1,0 +1,18 @@
+package ex3_filter;
+
+import java.util.Arrays;
+import java.util.List;
+
+/*
+ * filter 함수 이용
+ */
+public class FilterStreamEx1 {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("홍길동","김삿갓","홍길동","임꺽정","홍길동");
+		list.stream().forEach(s -> System.out.println(s));
+		System.out.println("중복제거하여 출력하기");
+		//중복된 내용 제거 출력하기
+		list.stream().distinct().forEach(s -> System.out.println(s));
+	}
+
+}

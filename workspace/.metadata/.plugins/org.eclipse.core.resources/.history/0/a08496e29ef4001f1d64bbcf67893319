@@ -1,0 +1,10 @@
+package ex4_map;
+
+public class MapEx2_product {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

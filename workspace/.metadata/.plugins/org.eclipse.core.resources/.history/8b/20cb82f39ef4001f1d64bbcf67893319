@@ -1,0 +1,26 @@
+package ex4_map;
+/*
+ * product.txt 파일 생성
+ */
+class Car{
+	private int month;
+	private int con;
+	private String car;
+	private int qty;
+	private String remark;
+	public Car() {}
+	public Car(int month, int con, String car, int qty, String remark) {
+		super();
+		this.month = month;
+		this.con = con;
+		this.car = car;
+		this.qty = qty;
+		this.remark = remark;
+	}
+	
+}
+public class MapEx2_product {
+	public static void main(String[] args) {
+	}
+
+}

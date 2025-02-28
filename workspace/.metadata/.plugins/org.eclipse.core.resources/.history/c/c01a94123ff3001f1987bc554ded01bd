@@ -1,0 +1,27 @@
+package ex5_other;
+/*
+ * Thread 우선순위
+ * Runnable 상태에서 Running 상태 변경시 스케줄러가 관여함. 개발자의 영역이 아님
+ * 우선순위를 설정하여 실행 상태의 확률을 높일 수 있음.
+ * 
+ *  우선순위 : 1 ~ 10까지
+ * 	  10: 가장 높은 우선순위
+ * 	  5 : 기본 우선순위 
+ * 	  1 : 가장 낮은 우선순위
+ */
+class ThreadPriority extends Thread{
+	ThreadPriority(String name){
+		this(name, Thread.NORM_PRIORITY);
+	}
+	ThreadPriority(String name, int p) {
+		super(name);
+		this.setPriority(p);
+	}
+	
+}
+public class PriorityEx1 {
+	public static void main(String[] args) {
+		
+	}
+
+}

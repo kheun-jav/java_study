@@ -1,0 +1,16 @@
+package ex4_map;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+/*
+ * product.txt. 파일에서 그랜저 반품목록 출력하기
+ */
+public class Exam2 {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new FileReader("product.txt"));
+
+	}
+
+}

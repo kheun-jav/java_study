@@ -1,0 +1,15 @@
+package ex4_operator;
+/*
+ * Operator 인터페이스
+ * 	- Function 인터페이스의 하위 인터페이스
+ * 	- 매개변수, 리턴값 모두 존재.
+ * 	- T applyXXXX(T)
+ * 
+ * 	-종류
+ * 	  BinaryOperator<T> : Tapply(T t1, T t2) => BiFunction 인터페이스의 하위 인터페이스
+ */
+public class OperatorEx1 {
+	public static void main(String[] args) {
+	
+	}
+}

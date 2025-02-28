@@ -1,0 +1,26 @@
+package ex3_function;
+
+import java.util.function.Function;
+
+public class Exam1 {
+	private static Student list[] = {
+			new Student("홍길동", 90, 80, "경영"),
+			new Student("김삿갓", 95, 70, "컴공"),
+			new Student("이몽룡", 85, 75, "통계")
+	};
+	public static void main(String[] args) {
+		System.out.print("학생들의 영어 점수 합계:");
+		printTot(s->s.getEng());
+		System.out.print("학생들의 수학 점수 합계:");
+		printTot(s->s.getMath());
+	}
+
+	}
+public static void printTot(Function<Student,String> f) {
+	int sum1 = 0;
+	int sum2 = 0;
+	for(Student s : list) {
+	}
+}
+
+}

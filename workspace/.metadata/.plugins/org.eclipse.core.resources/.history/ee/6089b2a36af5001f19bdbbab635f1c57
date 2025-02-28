@@ -1,0 +1,27 @@
+package ex10_collect;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import chap16.Student;
+/*
+ * collect() : Collection 객체로 변경.
+ */
+public class Ex02_Collect {
+	public static void main(String[] args) {
+		Student stuArr [] = {
+				new Student("이자바", 3, 34, 55, 80),
+				new Student("김자바", 1, 60, 45, 90),
+				new Student("안자바", 2, 80, 95, 60),
+				new Student("박자바", 2, 75, 85, 70),
+				new Student("소자바", 1, 65, 65, 90),
+				new Student("나자바", 3, 60, 85, 50),
+				new Student("감자바", 3, 40, 75, 60)};
+		System.out.println("1. 학생 이름만 뽑아서 List<String>에 저장한다");
+		List<String> names = Stream.of(stuArr)
+				.map(Student::getName)
+				.collect(Collectors.toList());
+		System.out.println(names);
+	}
+
+}

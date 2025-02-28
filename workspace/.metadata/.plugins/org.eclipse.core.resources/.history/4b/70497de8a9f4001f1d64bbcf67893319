@@ -1,0 +1,9 @@
+package ex5_flatmap;
+/*
+ * flatMaptoInt() : Stream을 IntStream 으로 변경.
+ */
+public class FlatMapEx2 {
+	public static void main(String[] args) {
+	}
+
+}

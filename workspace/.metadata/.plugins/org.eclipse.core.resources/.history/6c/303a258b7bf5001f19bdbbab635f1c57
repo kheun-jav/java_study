@@ -1,0 +1,18 @@
+package ex11_group;
+
+import java.util.Arrays;
+import java.util.List;
+
+import chap16.Student2;
+
+public class Exo2_Group {
+public static void main(String[] args) {
+	List<Student2> list = Arrays.asList(
+			new Student2("홍길동", 50, Student2.Gender.MALE),
+			new Student2("김길순", 70, Student2.Gender.FEMALE),
+			new Student2("박자바", 85, Student2.Gender.MALE),
+			new Student2("이순영", 75, Student2.Gender.FEMALE)
+			);
+	
+}
+}

@@ -1,0 +1,10 @@
+package ex3_filter;
+
+public class FilterStreamEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package ex5_flatmap;
+
+import java.util.Arrays;
+import java.util.List;
+
+/*
+ * flatMaptoInt() : Stream을 IntStream 으로 변경.
+ */
+public class FlatMapEx2 {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("10,20,30","40,50,60");
+		list.stream()
+		.flatMapToInt(s->s.split(","))
+		.forEach(s -> System.out.println(s));
+	}
+
+}

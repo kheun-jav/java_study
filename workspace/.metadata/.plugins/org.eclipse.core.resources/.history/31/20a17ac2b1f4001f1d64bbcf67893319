@@ -1,0 +1,17 @@
+package ex5_flatmap;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Exam2 {
+	public static void main(String[] args) {
+		Stream<String[]> strArrStrm = Stream.of(
+				new String[] {"abc", "def", "jkl"},
+				new String[] {"ABC", "DEF", "JKL"}
+				);
+		List<String[]> word = new ArrayList<String[]>();
+		word.add(strArrStrm);
+	}
+
+}

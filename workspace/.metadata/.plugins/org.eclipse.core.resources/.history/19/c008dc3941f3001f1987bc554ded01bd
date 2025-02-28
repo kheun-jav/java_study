@@ -1,0 +1,21 @@
+package ex5_other;
+class InterruptThread extends Thread{
+	public void run() {
+		System.out.println("자고있습니다. 깨우지 마세요");
+		try {
+			sleep(10000000);
+		} catch(InterruptedException e) {
+			System.out.println("누가 깨우지?");
+			e.printStackTrace();
+		}
+	}
+}
+public class InterruptEx1 {
+	public static void main(String[] args) throws InterruptedException {
+		InterruptThread t1 = new InterruptThread();
+		t1.start();
+		Thread.sleep(2000);
+		t1.interrupt();
+	}
+
+}
